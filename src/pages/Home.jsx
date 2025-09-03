@@ -12,8 +12,10 @@ function Home() {
     { id: 3, title: "Demon Slayer", release_date: "2025" },
   ];
 
-  const handleSearch = () => {
+  const handleSearch = (e) => {
+    e.preventDefault();
     alert(searchQuery);
+    setSearchQuery("");
   };
 
   return (
